@@ -83,7 +83,7 @@
         }
       }
 
-      /* Floating Decorations */
+      /* Floating Decorations
       .floating-decor {
         position: fixed;
         font-size: 2rem;
@@ -109,7 +109,7 @@
         100% {
           transform: translateY(0) rotate(0deg);
         }
-      }
+      } */
 
       /* Header Styles */
       header {
@@ -927,7 +927,7 @@
         position: relative;
         max-width: 90%;
         max-height: 90%;
-        margin: 5% auto;
+        margin: 2.5% auto;
         background: white;
         border-radius: 15px;
         overflow: hidden;
@@ -1082,12 +1082,12 @@
   </head>
   <body>
     <!-- Floating Decorations -->
-    <div class="floating-decor" style="top: 10%; left: 5%">🌸</div>
+    <!-- <div class="floating-decor" style="top: 10%; left: 5%">🌸</div>
     <div class="floating-decor" style="top: 20%; right: 10%">🌺</div>
     <div class="floating-decor" style="bottom: 30%; left: 8%">🌻</div>
     <div class="floating-decor" style="bottom: 15%; right: 5%">🌷</div>
     <div class="floating-decor" style="top: 60%; left: 15%">🌼</div>
-    <div class="floating-decor" style="top: 40%; right: 20%">🌹</div>
+    <div class="floating-decor" style="top: 40%; right: 20%">🌹</div> -->
 
     <!-- Header -->
     <header>
@@ -1343,15 +1343,50 @@
           </button>
 
           <!-- Cards Grid (sekarang horizontal scroll) -->
-          <!-- <div class="cards-grid" id="documentation-cards">
+          <div class="cards-grid" id="documentation-cards">
             <div
               class="card"
-              onclick="showImageDetail('Pembersihan Lahan Greenhouse', 'Kegiatan pembersihan dan persiapan lahan yang dilakukan oleh mahasiswa KKN sebagai tahap awal pembangunan greenhouse')"
+              onclick="showImageDetail('Mahasiswa KKN UNDIP Kelompok 2', 'Mahasiswa KKN IDBU 76 Kelompok 2')"
+            >
+              <img
+                src="./images/mahasiswa_kkn.jpeg"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                "
+              />
+              <h3 style="color: #166534">Mahasiswa KKN Kelompok 2</h3>
+            </div>
+
+            <div
+              class="card"
+              onclick="showImageDetail('Persiapan Awal Pembersihan Lahan', 'Kegiatan persiapan awal pembersihan lahan yang dilakukan oleh mahasiswa KKN sebagai tahap awal pembangunan greenhouse')"
+            >
+              <img
+                src="./images/pembersihan_lahan2.jpeg"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                "
+              />
+              <h3 style="color: #166534">Persiapan Awal Pembersihan Lahan</h3>
+            </div>
+
+            <div
+              class="card"
+              onclick="showImageDetail('Pembersihan Lahan', 'Kegiatan lanjutan pembersihan lahan oleh mahasiswa KKN sebelum pembangunan greenhouse dimulai')"
             >
               <img
                 src="./images/pembersihan_lahan.jpeg"
-                alt="Pembangunan Greenhouse"
-                onerror="this.src='https://via.placeholder.com/300x200/22c55e/ffffff?text=🏗️+Pembangunan'"
+                alt="Pembersihan Lahan"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1361,18 +1396,16 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Pembersihan Lahan Greenhouse</h3>
-              <p>Proses pembersihan lahan sebelum pembagunan</p>
+              <h3 style="color: #166534">Pembersihan Lahan</h3>
             </div>
 
             <div
               class="card"
-              onclick="showImageDetail('Pembangunan Greenhouse', 'Proses konstruksi greenhouse dengan teknologi modern untuk meningkatkan produktivitas pertanian desa')"
+              onclick="showImageDetail('Pengerukan Lahan', 'Kegiatan pengerukan tanah sebagai tahap persiapan pembuatan pondasi greenhouse')"
             >
               <img
-                src="./images/dokumentasi-1.jpg"
-                alt="Pembangunan Greenhouse"
-                onerror="this.src='https://via.placeholder.com/300x200/22c55e/ffffff?text=🏗️+Pembangunan'"
+                src="./images/pengerukan_lahan.jpeg"
+                alt="Pengerukan Lahan"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1382,18 +1415,16 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Pembangunan Greenhouse</h3>
-              <p>Proses konstruksi greenhouse dengan teknologi modern</p>
+              <h3 style="color: #166534">Pengerukan Lahan</h3>
             </div>
 
             <div
               class="card"
-              onclick="showImageDetail('Penanaman Bibit', 'Aktivitas penanaman bibit sayuran organik di dalam greenhouse yang terkontrol')"
+              onclick="showImageDetail('Hasil Pengerukan Lahan', 'Lahan seluas 6 x 6 meter yang telah diratakan dan siap untuk tahap pembangunan greenhouse')"
             >
               <img
-                src="./images/dokumentasi-2.jpg"
-                alt="Penanaman Bibit"
-                onerror="this.src='https://via.placeholder.com/300x200/16a34a/ffffff?text=🌱+Penanaman'"
+                src="./images/hasil_pengerukan.jpeg"
+                alt="Hasil Pengerukan Lahan"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1403,18 +1434,16 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Penanaman Bibit</h3>
-              <p>Aktivitas penanaman bibit sayuran di greenhouse</p>
+              <h3 style="color: #166534">Hasil Pengerukan Lahan</h3>
             </div>
 
             <div
               class="card"
-              onclick="showImageDetail('Perawatan Tanaman', 'Kegiatan pemeliharaan dan monitoring tanaman untuk hasil panen yang optimal')"
+              onclick="showImageDetail('Penyiraman Lahan', 'Kegiatan penyiraman lahan untuk menjaga kelembaban tanah sebelum pembangunan greenhouse dimulai')"
             >
               <img
-                src="./images/dokumentasi-3.jpg"
-                alt="Perawatan Tanaman"
-                onerror="this.src='https://via.placeholder.com/300x200/15803d/ffffff?text=🌿+Perawatan'"
+                src="./images/penyiraman_lahan.jpeg"
+                alt="Penyiraman Lahan"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1424,18 +1453,16 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Perawatan Tanaman</h3>
-              <p>Kegiatan pemeliharaan dan monitoring tanaman</p>
+              <h3 style="color: #166534">Penyiraman Lahan</h3>
             </div>
 
             <div
               class="card"
-              onclick="showImageDetail('Panen Hasil', 'Hasil panen sayuran segar berkualitas tinggi dari greenhouse berkelanjutan')"
+              onclick="showImageDetail('Pemadatan Lahan', 'Proses pemadatan tanah untuk memastikan kestabilan lahan sebelum pembangunan')"
             >
               <img
-                src="./images/dokumentasi-4.jpg"
-                alt="Panen Hasil"
-                onerror="this.src='https://via.placeholder.com/300x200/ca8a04/ffffff?text=🥬+Panen'"
+                src="./images/pemadatan_lahan.jpeg"
+                alt="Pemadatan Lahan"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1445,18 +1472,16 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Panen Hasil</h3>
-              <p>Hasil panen sayuran segar dari greenhouse</p>
+              <h3 style="color: #166534">Pemadatan Lahan</h3>
             </div>
 
             <div
               class="card"
-              onclick="showImageDetail('Pelatihan Warga', 'Sosialisasi dan pelatihan teknik greenhouse kepada masyarakat Desa Kebonagung')"
+              onclick="showImageDetail('Pembahasan Awal Sebelum Pembangunan', 'Diskusi dan perencanaan awal sebelum memulai pembangunan greenhouse')"
             >
               <img
-                src="./images/dokumentasi-5.jpg"
-                alt="Pelatihan Warga"
-                onerror="this.src='https://via.placeholder.com/300x200/3b82f6/ffffff?text=👥+Pelatihan'"
+                src="./images/pembahasan_awal.jpeg"
+                alt="Pembahasan Awal Sebelum Pembangunan"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1466,18 +1491,18 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Pelatihan Warga</h3>
-              <p>Sosialisasi dan pelatihan kepada masyarakat desa</p>
+              <h3 style="color: #166534">
+                Pembahasan Awal Sebelum Pembangunan
+              </h3>
             </div>
 
             <div
               class="card"
-              onclick="showImageDetail('Tim KKN UNDIP', 'Tim mahasiswa KKN Universitas Diponegoro yang berdedikasi untuk kemajuan desa')"
+              onclick="showImageDetail('Pembuatan Kerangka', 'Proses pembuatan kerangka greenhouse menggunakan baja ringan')"
             >
               <img
-                src="./images/dokumentasi-6.jpg"
-                alt="Tim KKN"
-                onerror="this.src='https://via.placeholder.com/300x200/8b5cf6/ffffff?text=🎓+Tim+KKN'"
+                src="./images/pembuatan_kerangka.jpeg"
+                alt="Pembuatan Kerangka"
                 style="
                   width: 100%;
                   height: 200px;
@@ -1487,10 +1512,85 @@
                   cursor: pointer;
                 "
               />
-              <h3 style="color: #166534">Tim KKN UNDIP</h3>
-              <p>Tim mahasiswa KKN Universitas Diponegoro</p>
+              <h3 style="color: #166534">Pembuatan Kerangka</h3>
             </div>
-          </div> -->
+
+            <div
+              class="card"
+              onclick="showImageDetail('Pembangunan Kerangka', 'Tahap pemasangan dan penyelesaian kerangka greenhouse')"
+            >
+              <img
+                src="./images/pembangunan_kerangka.JPG"
+                alt="Pembangunan Kerangka"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                "
+              />
+              <h3 style="color: #166534">Pembangunan Kerangka</h3>
+            </div>
+
+            <div
+              class="card"
+              onclick="showImageDetail('Pemasangan Bata Ringan', 'Proses pembangunan pondasi dan dinding greenhouse menggunakan bata ringan sebagai struktur dasar')"
+            >
+              <img
+                src="./images/pemasangan_bata_ringan.png"
+                alt="Pemasangan Bata Ringan"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                "
+              />
+              <h3 style="color: #166534">Pemasangan Bata Ringan</h3>
+            </div>
+
+            <div
+              class="card"
+              onclick="showImageDetail('Pemasangan Atap', 'Pemasangan atap greenhouse menggunakan plastik UV untuk melindungi tanaman dari hujan dan sinar matahari berlebih')"
+            >
+              <img
+                src="./images/pemasangan_atap.jpg"
+                alt="Pemasangan Atap"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                "
+              />
+              <h3 style="color: #166534">Pemasangan Atap</h3>
+            </div>
+
+            <div
+              class="card"
+              onclick="showImageDetail('Pemasangan Insectnet', 'Pemasangan insectnet di sekeliling greenhouse untuk mencegah masuknya hama dan menjaga kualitas tanaman')"
+            >
+              <img
+                src="./images/pemasangan_insecnet.jpg"
+                alt="Pemasangan Insectnet"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                "
+              />
+              <h3 style="color: #166534">Pemasangan Insectnet</h3>
+            </div>
+          </div>
         </div>
 
         <div style="text-align: center; margin-top: 3rem">
@@ -1514,8 +1614,19 @@
             &times;
           </button>
         </div>
-        <!-- <div class="gallery-modal-body">
+        <div class="gallery-modal-body">
           <div class="gallery-grid">
+            <div
+              class="gallery-item"
+              onclick="showFullImage('./images/mahasiswa_kkn.jpeg', 'Mahasiswa KKN UNDIP Kelompok 2')"
+            >
+              <img src="./images/mahasiswa_kkn.jpeg" alt="Tim KKN" />
+              <div class="gallery-overlay">
+                <h4>Mahasiswa KKN UNDIP Kelompok 2</h4>
+                <p>Mahasiswa KKN UNDIP Kelompok 2</p>
+              </div>
+            </div>
+
             <div
               class="gallery-item"
               onclick="showFullImage('./images/pembersihan_lahan2.jpeg', 'Persiapan Pembersihan Lahan')"
@@ -1523,10 +1634,9 @@
               <img
                 src="./images/pembersihan_lahan2.jpeg"
                 alt="Persiapan Pembersihan Lahan"
-                onerror="this.src='https://via.placeholder.com/300x200/3b82f6/ffffff?text=💧+Irigasi'"
               />
               <div class="gallery-overlay">
-                <h4>Tahap Persiapan Pembersihan Lahan</h4>
+                <h4>Kegiatan Persiapan Pembersihan Lahan</h4>
                 <p>Persiapan awal pembersihan lahan</p>
               </div>
             </div>
@@ -1538,7 +1648,6 @@
               <img
                 src="./images/pembersihan_lahan.jpeg"
                 alt="Pembersihan Lahan"
-                onerror="this.src='https://via.placeholder.com/300x200/22c55e/ffffff?text=🏗️+Pembangunan'"
               />
               <div class="gallery-overlay">
                 <h4>Tahap Pembersihan Lahan</h4>
@@ -1548,155 +1657,145 @@
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/dokumentasi-1.jpg', 'Pembangunan Greenhouse')"
+              onclick="showFullImage('./images/pengerukan_lahan.jpeg', 'Pengerukan Lahan Greenhouse')"
             >
               <img
-                src="./images/dokumentasi-1.jpg"
-                alt="Pembangunan Greenhouse"
-                onerror="this.src='https://via.placeholder.com/300x200/22c55e/ffffff?text=🏗️+Pembangunan'"
+                src="./images/pengerukan_lahan.jpeg"
+                alt="Pengerukan Lahan Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Pembangunan Greenhouse</h4>
-                <p>Proses konstruksi</p>
+                <h4>Proses Pengerukan Lahan Greenhouse</h4>
+                <p>Pengerukan lahan greenhouse</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/dokumentasi-2.jpg', 'Penanaman Bibit')"
+              onclick="showFullImage('./images/hasil_pengerukan.jpeg', 'Hasil Pengerukan Lahan Greenhouse')"
             >
               <img
-                src="./images/dokumentasi-2.jpg"
-                alt="Penanaman Bibit"
-                onerror="this.src='https://via.placeholder.com/300x200/16a34a/ffffff?text=🌱+Penanaman'"
+                src="./images/hasil_pengerukan.jpeg"
+                alt="Pengerukan Lahan Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Penanaman Bibit</h4>
-                <p>Aktivitas penanaman</p>
+                <h4>Hasil Pengerukan Lahan Greenhouse</h4>
+                <p>Lahan greenhouse ukuran 6 x 6 meter</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/dokumentasi-3.jpg', 'Perawatan Tanaman')"
+              onclick="showFullImage('./images/penyiraman_lahan.jpeg', 'Penyiraman Lahan Greenhouse')"
             >
               <img
-                src="./images/dokumentasi-3.jpg"
-                alt="Perawatan Tanaman"
-                onerror="this.src='https://via.placeholder.com/300x200/15803d/ffffff?text=🌿+Perawatan'"
+                src="./images/penyiraman_lahan.jpeg"
+                alt="Penyiraman Lahan Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Perawatan Tanaman</h4>
-                <p>Pemeliharaan rutin</p>
+                <h4>Kegiatan Penyiraman Lahan Greenhouse</h4>
+                <p>Penyiraman lahan greenhouse</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/dokumentasi-4.jpg', 'Panen Hasil')"
+              onclick="showFullImage('./images/pemadatan_lahan.jpeg', 'Pemadatan Lahan Greenhouse')"
             >
               <img
-                src="./images/dokumentasi-4.jpg"
-                alt="Panen Hasil"
-                onerror="this.src='https://via.placeholder.com/300x200/ca8a04/ffffff?text=🥬+Panen'"
+                src="./images/pemadatan_lahan.jpeg"
+                alt="Pemadatan Lahan Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Panen Hasil</h4>
-                <p>Hasil panen segar</p>
+                <h4>Kegiatan Pemadatan Lahan Greenhouse</h4>
+                <p>Pemadatan lahan greenhouse</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/dokumentasi-5.jpg', 'Pelatihan Warga')"
+              onclick="showFullImage('./images/pembahasan_awal.jpeg', 'Pembahasan Awal Pembangunan Greenhouse')"
             >
               <img
-                src="./images/dokumentasi-5.jpg"
-                alt="Pelatihan Warga"
-                onerror="this.src='https://via.placeholder.com/300x200/3b82f6/ffffff?text=👥+Pelatihan'"
+                src="./images/pembahasan_awal.jpeg"
+                alt="Pembahasan Awal Pembangunan Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Pelatihan Warga</h4>
-                <p>Sosialisasi program</p>
+                <h4>Pembahasan Awal Pembangunan Greenhouse</h4>
+                <p>Pembahasan awal pembangunan greenhouse</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/dokumentasi-6.jpg', 'Tim KKN UNDIP')"
+              onclick="showFullImage('./images/pembuatan_kerangka.jpeg', 'Pembuatan Kerangka Greenhouse')"
             >
               <img
-                src="./images/dokumentasi-6.jpg"
-                alt="Tim KKN"
-                onerror="this.src='https://via.placeholder.com/300x200/8b5cf6/ffffff?text=🎓+Tim+KKN'"
+                src="./images/pembuatan_kerangka.jpeg"
+                alt="Pembuatan Kerangka Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Tim KKN UNDIP</h4>
-                <p>Tim mahasiswa KKN</p>
+                <h4>Pembuatan Kerangka Greenhouse</h4>
+                <p>Kerangka greenhouse terbuat dari baja ringan</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/monitoring-suhu.jpg', 'Monitoring Suhu')"
+              onclick="showFullImage('./images/pembangunan_kerangka.jpg', 'Pembangunan Kerangka Greenhouse')"
             >
               <img
-                src="./images/monitoring-suhu.jpg"
-                alt="Monitoring Suhu"
-                onerror="this.src='https://via.placeholder.com/300x200/f59e0b/ffffff?text=🌡️+Monitor'"
+                src="./images/pembangunan_kerangka.jpg"
+                alt="Pembangunan Kerangka Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Monitoring Suhu</h4>
-                <p>Kontrol suhu otomatis</p>
+                <h4>Pembangunan Kerangka Greenhouse</h4>
+                <p>Pembangunan kerangka greenhouse</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/hasil-panen-2.jpg', 'Hasil Panen Terbaru')"
+              onclick="showFullImage('./images/pemasangan_bata_ringan.png', 'Pemasangan Bata Ringan Greenhouse')"
             >
               <img
-                src="./images/hasil-panen-2.jpg"
-                alt="Hasil Panen Terbaru"
-                onerror="this.src='https://via.placeholder.com/300x200/ca8a04/ffffff?text=🥬+Panen+2'"
+                src="./images/pemasangan_bata_ringan.png"
+                alt="Pemasangan Bata Ringan Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Hasil Panen Terbaru</h4>
-                <p>Panen bulan ini</p>
+                <h4>Pemasangan Bata Ringan Greenhouse</h4>
+                <p>Pembangunan pondasi greenhouse dari bata ringan</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/kegiatan-harian.jpg', 'Kegiatan Harian')"
+              onclick="showFullImage('./images/pemasangan_atap.jpg', 'Pemasangan Atap Greenhouse')"
             >
               <img
-                src="./images/kegiatan-harian.jpg"
-                alt="Kegiatan Harian"
-                onerror="this.src='https://via.placeholder.com/300x200/16a34a/ffffff?text=📅+Harian'"
+                src="./images/pemasangan_atap.jpg"
+                alt="Pemasangan Atap Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Kegiatan Harian</h4>
-                <p>Aktivitas rutin greenhouse</p>
+                <h4>Pemasangan Atap Greenhouse</h4>
+                <p>Pembuatan atap greenhouse dari plastik UV</p>
               </div>
             </div>
 
             <div
               class="gallery-item"
-              onclick="showFullImage('./images/sosialisasi-2.jpg', 'Sosialisasi Lanjutan')"
+              onclick="showFullImage('./images/pemasangan_insecnet.jpg', 'Pemasangan Insectnet Greenhouse')"
             >
               <img
-                src="./images/sosialisasi-2.jpg"
-                alt="Sosialisasi Lanjutan"
-                onerror="this.src='https://via.placeholder.com/300x200/3b82f6/ffffff?text=👥+Sosialisasi'"
+                src="./images/pemasangan_insecnet.jpg"
+                alt="Pemasangan Atap Greenhouse"
               />
               <div class="gallery-overlay">
-                <h4>Sosialisasi Lanjutan</h4>
-                <p>Program edukasi warga</p>
+                <h4>Pemasangan Insectnet Greenhouse</h4>
+                <p>Pemasangan Insectnet greenhouse</p>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
 
@@ -1745,14 +1844,6 @@
                 <div>
                   <strong>Kabupaten Grobogan</strong>
                   <p>Provinsi Jawa Tengah</p>
-                </div>
-              </div>
-
-              <div class="location-item">
-                <span>📞</span>
-                <div>
-                  <strong>Kontak</strong>
-                  <p>+62 292 421234</p>
                 </div>
               </div>
 
