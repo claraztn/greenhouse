@@ -1967,15 +1967,34 @@
           const plantDesc = this.querySelector("p").textContent;
 
           const descriptions = {
-            Bayam:
-              "Bayam adalah sayuran hijau yang kaya akan zat besi, vitamin A, dan folat. Sangat mudah tumbuh di polybag dan cocok untuk pemula. Dapat dipanen dalam 30-40 hari setelah tanam. Di greenhouse, bayam tumbuh lebih optimal dengan kontrol suhu dan kelembaban yang tepat.",
-            Kangkung:
-              "Kangkung adalah tanaman yang cepat tumbuh dan cocok ditanam dalam media terbatas. Kaya akan vitamin A, C, dan zat besi. Dapat dipanen berkali-kali dengan teknik pemotongan yang tepat. Greenhouse memungkinkan produksi kangkung sepanjang tahun.",
-            Serai:
-              "Serai memiliki aroma yang khas dan sering digunakan dalam masakan serta sebagai obat tradisional. Tanaman ini mudah tumbuh dan dapat bertahan lama di greenhouse. Serai juga berfungsi sebagai pengusir hama alami untuk tanaman lain.",
-            Jahe: "Jahe memiliki banyak manfaat kesehatan sebagai anti-inflamasi dan antioksidan alami. Cocok ditanam di greenhouse karena membutuhkan lingkungan yang terkendali untuk pertumbuhan optimal. Greenhouse melindungi jahe dari cuaca ekstrem dan meningkatkan kualitas rimpang.",
-          };
+            Bayam: `
+                  Kaya zat besi, vitamin A, dan folat.
+                  Cara tanam: Tebar benih di polybag berisi media tanam.
+                  Siram rutin dan letakkan di tempat terang.
+                  Masa panen: 30–40 hari setelah tanam.
+                  `,
 
+            Kangkung: `
+                  Mengandung vitamin A, C, dan zat besi.
+                  Cara tanam: Sebar benih di polybag.
+                  Siram dua kali sehari.
+                  Masa panen: 21–30 hari, dapat dipanen berulang.
+                  `,
+
+            Serai: `
+                  Berfungsi sebagai bumbu dan pengusir hama alami.
+                  Cara tanam: Tanam batang serai di polybag.
+                  Siram teratur.
+                  Masa panen: 4–6 bulan setelah tanam.
+                  `,
+
+            Jahe: `
+                  Bermanfaat untuk kesehatan.
+                  Cara tanam: Tanam rimpang jahe di polybag dengan media lembap.
+                  Jaga kelembapan.
+                  Masa panen: 8–10 bulan setelah tanam.
+                  `,
+          };
           const fullDescription = descriptions[plantName] || plantDesc;
           const imageSrc = this.querySelector("img").src;
 
@@ -2169,3 +2188,4 @@
     </script>
   </body>
 </html>
+
