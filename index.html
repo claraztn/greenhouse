@@ -149,7 +149,7 @@
       }
 
       .logo-text h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: bold;
       }
 
@@ -252,7 +252,7 @@
         padding: 6px 10px;
         border-radius: 20px;
         display: inline-block;
-        margin-bottom: 1rem;
+        margin-bottom: 0.7rem;
         font-size: 1rem;
         font-weight: 500;
         font-style: italic;
@@ -263,7 +263,7 @@
       }
 
       .hero h1 {
-        font-size: clamp(3.5rem, 8vw, 4rem);
+        font-size: clamp(5rem, 8vw, 4rem);
         font-weight: 900;
         background: linear-gradient(135deg, #166534, #16a34a, #22c55e);
         -webkit-background-clip: text;
@@ -275,7 +275,7 @@
       }
 
       .hero h2 {
-        font-size: clamp(1.8rem, 5vw, 2.5rem);
+        font-size: 2.5rem;
         color: #16a34a;
         margin-bottom: 1rem;
         font-style: italic;
@@ -746,8 +746,9 @@
         }
 
         .cards-grid {
-          grid-template-columns: 1fr;
-          gap: 20px;
+          grid-template-columns: repeat(2, 1fr); /* 2 kolom di HP */
+          gap: 10px; /* jarak antar kartu lebih kecil di HP */
+          padding: 10px;
         }
 
         .modal-content {
@@ -767,43 +768,6 @@
 
         .map-container iframe {
           height: 250px;
-        }
-
-        .hero-badge,
-        .hero-author {
-          display: block; /* supaya elemen jadi full-width */
-          width: 100%; /* memenuhi lebar container */
-          box-sizing: border-box;
-          font-size: 1rem; /* kecilkan font agar muat */
-          padding-left: 10px; /* beri sedikit padding kiri */
-          padding-right: 10px; /* beri sedikit padding kanan */
-          white-space: normal; /* supaya teks bisa wrap ke baris baru */
-          margin-bottom: 0.8rem;
-        }
-
-        .hero-badge {
-          .hero-badge {
-            display: inline-block; /* biar lebarnya sesuai isi */
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: white;
-            background: linear-gradient(to right, #16a34a, #22c55e);
-            padding: 8px 20px;
-            border-radius: 25px;
-
-            white-space: nowrap; /* ini supaya teks tetap di satu baris */
-            overflow-x: auto;
-          }
-        }
-
-        .hero-author {
-          font-style: italic;
-          font-weight: 600;
-          border-radius: 15px;
-          padding-top: 4px;
-          padding-bottom: 4px;
-          color: #16a34a;
-          opacity: 0.8;
         }
       }
 
@@ -1113,7 +1077,7 @@
         }
 
         .location-badge {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           padding: 10px 20px;
         }
 
@@ -1161,6 +1125,18 @@
         .card {
           font-size: 0.9rem; /* sedikit kecil supaya muat */
           padding: 8px;
+        }
+
+        .hero h1 {
+          font-size: clamp(3rem, 8vw, 4rem);
+          font-weight: 900;
+          background: linear-gradient(135deg, #166534, #16a34a, #22c55e);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin-bottom: 0.5rem;
+          text-transform: uppercase;
+          letter-spacing: -2px;
         }
       }
 
@@ -1218,9 +1194,7 @@
       <span class="decor top-right">🌱</span>
       <span class="decor bottom-left">🍃</span>
       <div class="container">
-        <div class="hero-badge">
-          🌿 PROGRAM MULTIDISIPLIN 1 🌿
-        </div>
+        <div class="hero-badge">🌿 PROGRAM MULTIDISIPLIN 1 🌿</div>
         <br />
         <div class="hero-author">
           by: Clara Zita Nabilla - Informatika - 2022
@@ -2275,4 +2249,3 @@
     </script>
   </body>
 </html>
-
