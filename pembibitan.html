@@ -117,7 +117,7 @@
           #fed7aa 50%,
           #fecaca 100%
         );
-        padding: 80px 0;
+        padding: 60px 0;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -181,7 +181,7 @@
         border-radius: 25px;
         display: inline-block;
         margin-bottom: 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
       }
 
@@ -190,7 +190,7 @@
         padding: 6px 10px;
         border-radius: 20px;
         display: inline-block;
-        margin-bottom: 1rem;
+        margin-bottom: 0.7rem;
         font-size: 1rem;
         font-weight: 500;
         font-style: italic;
@@ -201,13 +201,13 @@
       }
 
       .hero h1 {
-        font-size: 4rem;
+        font-size: clamp(5rem, 8vw, 4rem);
         font-weight: 900;
         background: linear-gradient(135deg, #7f1d1d, #dc2626, #ea580c);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         text-transform: uppercase;
         letter-spacing: -2px;
       }
@@ -568,6 +568,57 @@
       }
 
       /* Responsive Design */
+      @media (max-width: 1000px) {
+        .container {
+          padding: 0 15px;
+        }
+
+        .header-content {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+
+        nav ul {
+          justify-content: center;
+          gap: 10px;
+        }
+
+        nav a {
+          padding: 6px 12px;
+          font-size: 0.9rem;
+        }
+
+        .cabai-grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 20px;
+        }
+
+        .cards-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .modal-content {
+          width: 95%;
+          margin: 10% auto;
+        }
+
+        .modal-header,
+        .modal-body,
+        .modal-footer {
+          padding: 20px;
+        }
+
+        .modal-body img {
+          height: 200px;
+        }
+
+        .map-container iframe {
+          height: 250px;
+        }
+      }
+
       @media (max-width: 768px) {
         .hero h1 {
           font-size: 2.5rem;
@@ -635,6 +686,11 @@
           white-space: normal; /* ini bisa wrap jika perlu */
         }
 
+        .location-badge {
+          font-size: 0.8rem;
+          padding: 10px 20px;
+        }
+
         .cabai-card img {
           height: 120px; /* biar nggak terlalu tinggi di layar kecil */
           padding: 1px; /* lebih rapat */
@@ -666,11 +722,6 @@
         .logo img {
           width: 60px; /* kamu bisa atur ulang ukuran kalau mau */
           height: 60px;
-        }
-
-        .location-badge {
-          font-size: 0.9rem;
-          padding: 10px 20px;
         }
       }
     </style>
@@ -710,14 +761,12 @@
       <span class="decor top-right">🌶️</span>
       <span class="decor bottom-left">🌱</span>
       <div class="container">
-        <div class="hero-badge">
-          🌶️ PROGRAM MULTIDISIPLIN 2 🌶️
-        </div>
+        <div class="hero-badge">🌶️ PROGRAM MULTIDISIPLIN 2 🌶️</div>
         <br />
         <div class="hero-author">
           by: Clara Zita Nabilla - Informatika - 2022
         </div>
-        <h1>Pembibitan Cabai</h1>
+        <h1>Rumah Pembibitan</h1>
         <div class="location-badge">
           Ds. Kebonagung, Kec. Tegowanu, Kab. Grobogan
         </div>
